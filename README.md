@@ -1,4 +1,4 @@
-# SQL-Explore-Ecommerce-Dataset
+
 # [SQL] Explore Ecommerce Dataset
 ## I. Introduction
 This project contains an eCommerce dataset that I will explore using SQL on [Google BigQuery](https://cloud.google.com/bigquery). The dataset is based on the Google Analytics public dataset and contains data from an eCommerce website.
@@ -19,7 +19,7 @@ In this project, I will write 08 query in Bigquery base on Google Analytics data
 ### Query 01: Calculate total visit, pageview, transaction and revenue for January, February and March 2017 order by month
 * SQL code
 
-![image](https://user-images.githubusercontent.com/101726623/235141283-3f640e8c-237f-4100-b734-f0383a999560.png)
+![q1](https://github.com/user-attachments/assets/0e602a3e-d8e9-41de-8531-3176c75faf18)
 
 * Query results
 
