@@ -19,29 +19,29 @@ In this project, I will write 08 query in Bigquery base on Google Analytics data
 ### Query 01: Calculate total visit, pageview, transaction and revenue for January, February and March 2017 order by month
 * SQL code
 
-![q1](https://github.com/user-attachments/assets/0e602a3e-d8e9-41de-8531-3176c75faf18)
+![q1](https://github.com/user-attachments/assets/55b12c68-3cfc-40b6-a293-87a4793a5c22)
 
 * Query results
 
-![image](https://user-images.githubusercontent.com/101726623/235141359-1648197b-6339-42ca-b2a2-3dce9f39283b.png)
+![rq1](https://github.com/user-attachments/assets/6d1f67bf-37d4-4a35-8530-93a64ea34500)
 
 ### Query 02: Bounce rate per traffic source in July 2017
 * SQL code
 
-![image](https://user-images.githubusercontent.com/101726623/235142111-5df9bb05-f29c-49e5-a1d8-3f7187667874.png)
+![q2](https://github.com/user-attachments/assets/df33dd31-2d6f-4227-82f6-83f7fbb0cb04)
 
 * Query results
 
-![image](https://user-images.githubusercontent.com/101726623/235142182-87c47ea0-4cae-41b8-8204-f17d774914d3.png)
+![rq2](https://github.com/user-attachments/assets/ab1e918a-8fa3-480d-8c1d-41574c7b7c48)
 
 ### Query 3: Revenue by traffic source by week, by month in June 2017
 * SQL code
 
-![image](https://user-images.githubusercontent.com/101726623/235142542-556901cf-2087-4c72-94d4-0372546ad77d.png)
+![q3](https://github.com/user-attachments/assets/50a83e3d-637e-4b75-9e24-ddd4657e3751)
 
 * Query results
 
-![image](https://user-images.githubusercontent.com/101726623/235142590-e0fec692-794c-4247-a659-433ce605c158.png)
+![rq3](https://github.com/user-attachments/assets/876346fe-5c77-4b20-95ae-b30c7ab60363)
 
 ### Query 04: Average number of product pageviews by purchaser type (purchasers vs non-purchasers) in June, July 2017
 * SQL code
