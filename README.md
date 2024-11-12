@@ -46,97 +46,47 @@ In this project, I will write 08 query in Bigquery base on Google Analytics data
 ### Query 04: Average number of product pageviews by purchaser type (purchasers vs non-purchasers) in June, July 2017
 * SQL code
 
-![image](https://user-images.githubusercontent.com/101726623/235143185-85e4ffbe-1030-4f70-99c6-1571facdf3d8.png)
+![q4](https://github.com/user-attachments/assets/2659f802-8184-4f39-98b6-4024722aadc6)
 
 * Query results
 
-![image](https://user-images.githubusercontent.com/101726623/235143315-8d87f354-351b-4218-ac77-bf8c0f9e716b.png)
+![rq4](https://github.com/user-attachments/assets/b721c50a-e86e-4e48-8634-80000defad7a)
 
 ### Query 05: Average number of transactions per user that made a purchase in July 2017
 * SQL code
 
-![image](https://user-images.githubusercontent.com/101726623/235143576-0a816953-e12d-4d47-ab8b-0a851e82a65c.png)
+![q5](https://github.com/user-attachments/assets/7a8b8c54-60a2-4697-83b4-1f90069c18ff)
 
 * Query results
 
-![image](https://user-images.githubusercontent.com/101726623/235143708-06c7b447-5c1e-44bb-89ae-c5fed537bd92.png)
+![rq5](https://github.com/user-attachments/assets/e63d7459-3204-4fb0-be0b-74f12bfc79aa)
 
 ### Query 06: Average amount of money spent per session. Only include purchaser data in July 2017
 * SQL code
 
-![image](https://user-images.githubusercontent.com/101726623/235144017-2e40f75c-4374-4d2b-94cb-a36c591a80c2.png)
+![q6](https://github.com/user-attachments/assets/c0bb49bb-cc8c-466f-9e4e-9c9fd700658c)
 
 * Query results
 
-![image](https://user-images.githubusercontent.com/101726623/235144083-3499b416-0388-46ea-850f-30006e1b4ede.png)
+![rq6](https://github.com/user-attachments/assets/684a5a0b-b74c-495c-b9d7-403002eaaaa1)
 
 ### Query 07: Other products purchased by customers who purchased product "YouTube Men's Vintage Henley" in July 2017. Output should show product name and the quantity was ordered.
 * SQL code
 
-![image](https://user-images.githubusercontent.com/101726623/235146761-aeb66e07-8f91-4c6f-a4c2-c3fb8d64708a.png)
+![q7](https://github.com/user-attachments/assets/45826dd9-18ca-4ea2-b324-4e3b5e7180ab)
 
 * Query results
 
-![image](https://user-images.githubusercontent.com/101726623/235146847-e367b16c-38f0-484e-8c89-85dfa1b69499.png)
+![rq7](https://github.com/user-attachments/assets/2e55bae0-d7b7-40b9-8d65-a0e14b7b07a1)
 
 ### Query 08: Calculate cohort map from pageview to addtocart to purchase in last 3 month.
 * SQL code
 
-```
-with get_1month_cohort as (SELECT  
-  CASE WHEN 1 = 1 THEN "201701" END AS month,
-  COUNT(CASE WHEN hits.eCommerceAction.action_type = "2" AND product.isImpression IS NULL THEN fullVisitorId END) AS 
-num_product_view,
-  COUNT(CASE WHEN hits.eCommerceAction.action_type = "3" AND product.isImpression IS NULL THEN fullVisitorId END) AS 
-num_addtocart,
-  COUNT(CASE WHEN hits.eCommerceAction.action_type = "6" AND product.isImpression IS NULL THEN fullVisitorId END) AS 
-num_purchase,
-FROM `bigquery-public-data.google_analytics_sample.ga_sessions_201701*` ,
-UNNEST(hits) as hits,
-UNNEST(hits.product) as product),
+![q8](https://github.com/user-attachments/assets/0b9be397-1e11-4309-b8a1-7c3651f247da)
 
-get_2month_cohort as (SELECT  
-  CASE WHEN 1 = 1 THEN "201702" END AS month,
-  COUNT(CASE WHEN hits.eCommerceAction.action_type = "2" AND product.isImpression IS NULL THEN fullVisitorId END) AS 
-num_product_view,
-  COUNT(CASE WHEN hits.eCommerceAction.action_type = "3" AND product.isImpression IS NULL THEN fullVisitorId END) AS 
-num_addtocart,
-  COUNT(CASE WHEN hits.eCommerceAction.action_type = "6" AND product.isImpression IS NULL THEN fullVisitorId END) AS 
-num_purchase,
-FROM `bigquery-public-data.google_analytics_sample.ga_sessions_201702*` ,
-UNNEST(hits) as hits,
-UNNEST(hits.product) as product),
-
-get_3month_cohort as (SELECT  
-  CASE WHEN 1 = 1 THEN "201703" END AS month,
-  COUNT(CASE WHEN hits.eCommerceAction.action_type = "2" AND product.isImpression IS NULL THEN fullVisitorId END) AS 
-num_product_view,
-  COUNT(CASE WHEN hits.eCommerceAction.action_type = "3" AND product.isImpression IS NULL THEN fullVisitorId END) AS 
-num_addtocart,
-  COUNT(CASE WHEN hits.eCommerceAction.action_type = "6" AND product.isImpression IS NULL THEN fullVisitorId END) AS 
-num_purchase,
-FROM `bigquery-public-data.google_analytics_sample.ga_sessions_201703*` ,
-UNNEST(hits) as hits,
-UNNEST(hits.product) as product)
-
-select 
-month,
-num_product_view,
-num_addtocart,
-num_purchase,
-ROUND(num_addtocart/num_product_view*100,2) as add_to_cart_rate,
-ROUND(num_purchase/num_product_view*100,2) as purchase_rate
-from 
-(SELECT * FROM get_1month_cohort
-UNION ALL 
-SELECT * FROM get_2month_cohort
-UNION ALL
-SELECT * FROM get_3month_cohort)
-ORDER BY month;
-```
 * Query results
 
-![image](https://user-images.githubusercontent.com/101726623/235148311-a2d83174-9bf3-43e3-aed1-47030af40b3b.png)
+![rq8](https://github.com/user-attachments/assets/40433288-bb11-4b93-ba76-36d01a590362)
 
 ## V. Conclusion
 * In conclusion, my exploration of the eCommerce dataset using SQL on Google BigQuery based on the Google Analytics dataset has revealed several interesting insights.
