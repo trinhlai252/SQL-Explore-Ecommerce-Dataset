@@ -81,6 +81,7 @@ More detailed results, you can be found at
 
 ![rq5](https://github.com/user-attachments/assets/e63d7459-3204-4fb0-be0b-74f12bfc79aa)
 #### Insights
+*  Average number of transactions per user can provide insights into user activity levels and transaction frequency, which can be used to track engagement or establish goals for the coming months.
 ### Query 06: Average amount of money spent per session. Only include purchaser data in July 2017
 #### SQL code
 
@@ -90,6 +91,8 @@ More detailed results, you can be found at
 
 ![rq6](https://github.com/user-attachments/assets/684a5a0b-b74c-495c-b9d7-403002eaaaa1)
 #### Insights
+
+* The average amount of spending per session in July 2017 for purchasers reflects strong purchasing behavior, indicating deeper engagement and higher transaction values per visit. Analyzing this metric can help optimize pricing and promotional strategies.
 ### Query 07: Other products purchased by customers who purchased product "YouTube Men's Vintage Henley" in July 2017. Output should show product name and the quantity was ordered.
 #### SQL code
 
@@ -99,6 +102,10 @@ More detailed results, you can be found at
 
 ![rq7](https://github.com/user-attachments/assets/2e55bae0-d7b7-40b9-8d65-a0e14b7b07a1)
 #### Insights
+* Customers who purchased the YouTube Men's Vintage Henley in July 2017 tended to buy other YouTube-branded products, such as the YouTube Men's Fleece Hoodie Black and 22 oz YouTube Bottle Infuser, indicating a strong brand affinity.
+* There was also a noticeable trend in purchasing Google-branded items, like Google Sunglasses and Google Women's Vintage Hero Tee, which suggests that customers who are interested in YouTube products may also have a preference for other tech-related brands.
+* The variety of products purchased, from clothing to accessories like the Android Wool Heather Cap and Crunch Noise Dog Toy, points to a broad range of customer interests, suggesting opportunities for cross-selling and targeted marketing.
+* The significant purchase quantity of Google Sunglasses (20 units) shows a potential high demand for certain products alongside YouTube apparel.
 ### Query 08: Calculate cohort map from pageview to addtocart to purchase in last 3 month.
 #### SQL code
 
@@ -108,6 +115,12 @@ More detailed results, you can be found at
 
 ![rq8](https://github.com/user-attachments/assets/40433288-bb11-4b93-ba76-36d01a590362)
 #### Insights
+* In January 2017, the add-to-cart rate was 28.47%, and the purchase rate was 8.31%, showing a relatively low conversion from views to purchases.
+* February 2017 saw an increase in the add-to-cart rate to 34.25% and a slight increase in the purchase rate to 9.59%, indicating improved engagement and * potential interest from users.
+* March 2017 showed the highest rates, with add-to-cart at 37.29% and purchase rate at 12.64%, reflecting stronger customer intent and conversions.
+* The steady increase in both add-to-cart and purchase rates over the three months suggests that product appeal and customer purchase intent may have improved, potentially due to more effective marketing or promotions.
+* Overall, the purchase rate remains lower than the add-to-cart rate, which highlights an opportunity for further optimization in the purchase funnel to drive more conversions
 ## V. Conclusion
- In conclusion, my exploration of the eCommerce dataset using SQL on Google BigQuery based on the Google Analytics dataset has revealed several interesting insights.
+
+In conclusion, my analysis of the eCommerce dataset using SQL on Google BigQuery, based on the Google Analytics data, offers a detailed understanding of customer behavior—from product views to add-to-cart and conversion rates. This project provides valuable insights into customer behavior, highlighting opportunities to optimize marketing strategies and improve conversion rates. 
 
