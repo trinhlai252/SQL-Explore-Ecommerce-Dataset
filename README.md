@@ -1,7 +1,7 @@
 
 # [SQL] Explore Ecommerce Dataset
 ## I. Introduction
-This project contains an eCommerce dataset that I will explore using SQL on [Google BigQuery](https://cloud.google.com/bigquery). The dataset is based on the Google Analytics public dataset and contains data from an eCommerce website.
+This project involves exploring an eCommerce dataset using SQL on Google BigQuery. The dataset is based on the public Google Analytics dataset and includes data from an eCommerce website. By analyzing metrics such as product views, add-to-cart rates, and conversion rates, the project aims to gain valuable insights into customer behavior. The objective is to identify opportunities to optimize marketing strategies, drive revenue growth, and improve overall customer engagement.
 ## II. Requirements
 * [Google Cloud Platform account](https://cloud.google.com)
 * Project on Google Cloud Platform
