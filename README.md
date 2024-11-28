@@ -56,10 +56,13 @@ More detailed results, you can be found at
 [here](https://docs.google.com/spreadsheets/d/134DD3LqknTSfrjY1jEigEragSJDEkExmdwLh1AbTuUU/edit?gid=2000657425#gid=2000657425)
 
 #### Insights
-* Bing was the top-performing source in June 2017, generating the highest revenue of 13.98, both weekly and monthly.
-* l.facebook.com also performed well, contributing 12.48 in revenue consistently across weeks and the month.
-* Other sources, such as analytics.google.com, quora.com, and duckduckgo.com, showed no measurable revenue, indicating potential gaps in monetization or tracking.
-* Efforts could focus on leveraging high-performing sources like Bing and l.facebook.com while finding ways to improve or monetize low-value sources.
+* (direct) is the largest source of revenue, contributing 77.18% of the total revenue in June 2017, indicating strong direct traffic to the website, likely from loyal customers or bookmarked links.
+* Google accounts for 14.87% of the revenue, emphasizing the importance of search engine visibility and the role of Google in driving revenue.
+* Sources like dfa, mail.google.com, and search.myway.com contribute smaller portions, with dfa at 7.03%, mail.google.com at 2.03%, and search.myway.com at 0.08%, suggesting potential opportunities for optimization and better targeting in these channels.
+* The remaining sources, such as yahoo, youtube.com, and bing, represent a small percentage, highlighting potential areas for improvement in marketing strategies to increase revenue from these channels.
+
+To visualize the distribution of revenue by source, a pie chart has been created, showing the breakdown of revenue from the top 4 sources and grouping all other sources under "Other" in June 2017. This chart highlights the dominance of direct traffic and shows how smaller channels contribute to the overall revenue.
+
 ### Query 04: Average number of product pageviews by purchaser type (purchasers vs non-purchasers) in June, July 2017
 #### SQL code
 
