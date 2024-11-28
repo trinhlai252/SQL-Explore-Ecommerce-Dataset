@@ -120,6 +120,10 @@ More detailed results, you can be found at
 * March 2017 showed the highest rates, with add-to-cart at 37.29% and purchase rate at 12.64%, reflecting stronger customer intent and conversions.
 * The steady increase in both add-to-cart and purchase rates over the three months suggests that product appeal and customer purchase intent may have improved, potentially due to more effective marketing or promotions.
 * Overall, the purchase rate remains lower than the add-to-cart rate, which highlights an opportunity for further optimization in the purchase funnel to drive more conversions
+
+  To illustrate this trend more clearly, a line chart was created comparing the add-to-cart and purchase rates by month, highlighting the steady improvement in conversion rates and customer engagement over time.
+  <img src="https://github.com/user-attachments/assets/64c40e0b-e2f8-42c0-ba9b-b9db771ed787" alt="Add-to-Cart and Purchase Rates" width="600"/>
+
 ## V. Conclusion
 
 In conclusion, my analysis of the eCommerce dataset using SQL on Google BigQuery, based on the Google Analytics data, offers a detailed understanding of customer behavior—from product views to add-to-cart and conversion rates. This project provides valuable insights into customer behavior, highlighting opportunities to optimize marketing strategies and improve conversion rates. 
